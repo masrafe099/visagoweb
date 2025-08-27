@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { GraduationCap, Globe, BookOpen, Users, Award, TrendingUp, ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const StudyVisaPage = () => {
+  const navigate = useNavigate();
   const features = [
     {
       icon: Globe,
@@ -207,6 +209,16 @@ const StudyVisaPage = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
+                    onClick={() => {
+                      if (country.name === 'China') {
+                        navigate('/china');
+                      } else {
+                        // Handle other country clicks or a generic country page
+                        // For now, we'll just navigate to a generic country page if it exists
+                        // or do nothing if no specific page is intended.
+                        // For example: navigate(`/country/${country.name.toLowerCase().replace(/\s/g, '-')}`);
+                      }
+                    }}
                     className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full font-semibold flex items-center justify-center space-x-2 transition-colors"
                   >
                     <span>Learn More</span>

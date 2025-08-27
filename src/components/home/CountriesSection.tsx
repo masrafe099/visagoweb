@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Star, Users, Briefcase, GraduationCap } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const CountriesSection = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const navigate = useNavigate();
 
   const countries = [
     {
@@ -161,6 +163,14 @@ const CountriesSection = () => {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  onClick={() => {
+                    if (country.name === 'China') {
+                      navigate('/china');
+                    } else {
+                      // Handle other country clicks or a generic country page
+                      navigate(`/country/${country.name.toLowerCase().replace(/\s/g, '-')}`);
+                    }
+                  }}
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full font-semibold transition-colors"
                 >
                   Learn More
