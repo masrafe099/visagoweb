@@ -10,6 +10,7 @@ import BlogPage from './pages/BlogPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import ChinaPage from './pages/ChinaPage';
+import SloveniaPage from './pages/SloveniaPage';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/tourist-visa" element={<TouristVisaPage />} />
           <Route path="/country/:countryName" element={<CountryPage />} />
           <Route path="/china" element={<ChinaPage />} />
+          <Route path="/slovenia" element={<SloveniaPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />

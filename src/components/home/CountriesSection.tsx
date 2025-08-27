@@ -39,10 +39,10 @@ const CountriesSection = () => {
       name: 'Slovenia',
       flag: '🇸🇮',
       category: 'work',
-      highlight: 'Best Job Opportunities',
-      description: 'Growing economy with excellent work-life balance',
-      features: ['EU membership', 'Beautiful landscapes', 'Growing tech sector'],
-      image: 'https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop'
+      highlight: 'Zero Advance Payment',
+      description: '100% job guarantee with a 2+ year work permit. Both work and tourist visas available.',
+      features: ['4-5 month processing', '€1,200+ monthly salary', 'Free accommodation'],
+      image: 'https://images.pexels.com/photos/1632061/pexels-photo-1632061.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop'
     },
     {
       name: 'China',
@@ -166,7 +166,10 @@ const CountriesSection = () => {
                   onClick={() => {
                     if (country.name === 'China') {
                       navigate('/china');
-                    } else {
+                    } else if (country.name === 'Slovenia') {
+                      navigate('/slovenia');
+                    }
+                    else {
                       // Handle other country clicks or a generic country page
                       navigate(`/country/${country.name.toLowerCase().replace(/\s/g, '-')}`);
                     }

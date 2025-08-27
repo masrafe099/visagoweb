@@ -1,8 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Briefcase, TrendingUp, Globe, Users, Award, Building, ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const WorkVisaPage = () => {
+  const navigate = useNavigate();
+
   const features = [
     {
       icon: TrendingUp,
@@ -222,6 +225,11 @@ const WorkVisaPage = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
+                    onClick={() => {
+                      if (country.name === 'Slovenia') {
+                        navigate('/slovenia');
+                      }
+                    }}
                     className="w-full bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-full font-semibold flex items-center justify-center space-x-2 transition-colors"
                   >
                     <span>Explore Jobs</span>
