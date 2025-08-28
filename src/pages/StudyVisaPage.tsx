@@ -47,6 +47,13 @@ const StudyVisaPage = () => {
       image: 'https://images.pexels.com/photos/2412603/pexels-photo-2412603.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop'
     },
     {
+      name: 'Denmark',
+      flag: '🇩🇰',
+      highlight: 'Innovation & Quality of Life',
+      description: 'World-class education in one of the happiest countries.',
+      image: 'https://images.pexels.com/photos/2693529/pexels-photo-2693529.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop'
+    },
+    {
       name: 'Japan',
       flag: '🇯🇵',
       highlight: 'Technology & Innovation Excellence',
@@ -80,6 +87,13 @@ const StudyVisaPage = () => {
       highlight: 'Ivy League opportunities',
       description: 'Access to world\'s top universities and research facilities',
       image: 'https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop'
+    },
+    {
+      name: 'Hungary',
+      flag: '🇭🇺',
+      highlight: 'Affordable & Quality Education',
+      description: 'Study in the heart of Europe with rich cultural experiences.',
+      image: 'https://images.pexels.com/photos/163064/buda-castle-hungary-vienna-gate-163064.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop'
     }
   ];
 
@@ -212,12 +226,17 @@ const StudyVisaPage = () => {
                     onClick={() => {
                       if (country.name === 'China') {
                         navigate('/china');
-                      } else {
-                        // Handle other country clicks or a generic country page
-                        // For now, we'll just navigate to a generic country page if it exists
-                        // or do nothing if no specific page is intended.
-                        // For example: navigate(`/country/${country.name.toLowerCase().replace(/\s/g, '-')}`);
+                      } else if (country.name === 'Denmark') {
+                        navigate('/denmark');
+                      } else if (country.name === 'Hungary') {
+                        navigate('/hungary');
+                      } else if (country.name === 'Japan') {
+                        navigate('/japan');
                       }
+                      // Handle other country clicks or a generic country page
+                      // For now, we'll just navigate to a generic country page if it exists
+                      // or do nothing if no specific page is intended.
+                      // For example: navigate(`/country/${country.name.toLowerCase().replace(/\s/g, '-')}`);
                     }}
                     className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full font-semibold flex items-center justify-center space-x-2 transition-colors"
                   >

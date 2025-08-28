@@ -11,6 +11,9 @@ import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import ChinaPage from './pages/ChinaPage';
 import SloveniaPage from './pages/SloveniaPage';
+import DenmarkPage from './pages/DenmarkPage';
+import HungaryPage from './pages/HungaryPage';
+import JapanPage from './pages/JapanPage';
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
           <Route path="/country/:countryName" element={<CountryPage />} />
           <Route path="/china" element={<ChinaPage />} />
           <Route path="/slovenia" element={<SloveniaPage />} />
+          <Route path="/denmark" element={<DenmarkPage />} />
+          <Route path="/hungary" element={<HungaryPage />} />
+          <Route path="/japan" element={<JapanPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
