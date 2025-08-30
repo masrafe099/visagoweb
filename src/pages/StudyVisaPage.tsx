@@ -82,18 +82,46 @@ const StudyVisaPage = () => {
       image: 'https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop'
     },
     {
-      name: 'USA',
-      flag: '🇺🇸',
-      highlight: 'Ivy League opportunities',
-      description: 'Access to world\'s top universities and research facilities',
-      image: 'https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop'
-    },
-    {
       name: 'Hungary',
       flag: '🇭🇺',
       highlight: 'Affordable & Quality Education',
       description: 'Study in the heart of Europe with rich cultural experiences.',
       image: 'https://images.pexels.com/photos/163064/buda-castle-hungary-vienna-gate-163064.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop'
+    },
+    {
+      name: 'Malta',
+      flag: '🇲🇹',
+      highlight: 'Affordable EU Education + Schengen Access',
+      description: 'English-taught programs in a safe, sunny Mediterranean country.',
+      image: 'https://images.pexels.com/photos/532387/pexels-photo-532387.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop'
+    },
+    {
+      name: 'Sweden',
+      flag: '🇸🇪',
+      highlight: 'Innovation, Sustainability, Quality Education',
+      description: 'English-taught programs, research excellence, and high quality of life.',
+      image: 'https://images.pexels.com/photos/414660/pexels-photo-414660.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop'
+    },
+    {
+      name: 'Finland',
+      flag: '🇫🇮',
+      highlight: 'Innovation, Safety, Quality Education',
+      description: 'World-class universities, high quality of life, and strong career pathways.',
+      image: 'https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop'
+    },
+    {
+      name: 'Netherlands',
+      flag: '🇳🇱',
+      highlight: 'Innovative, International, High Employability',
+      description: 'Top-ranked universities, English-taught programs, and strong industry links.',
+      image: 'https://images.pexels.com/photos/208733/pexels-photo-208733.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop'
+    },
+    {
+      name: 'France',
+      flag: '🇫🇷',
+      highlight: 'Excellence, Culture & Research',
+      description: 'Top universities, scholarships, English/French programs, and rich culture.',
+      image: 'https://images.pexels.com/photos/161901/paris-france-eiffel-tower-tower-161901.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop'
     }
   ];
 
@@ -226,12 +254,28 @@ const StudyVisaPage = () => {
                     onClick={() => {
                       if (country.name === 'China') {
                         navigate('/china');
+                      } else if (country.name === 'Australia') {
+                        navigate('/australia');
+                      } else if (country.name === 'Canada') {
+                        navigate('/canada');
                       } else if (country.name === 'Denmark') {
                         navigate('/denmark');
                       } else if (country.name === 'Hungary') {
                         navigate('/hungary');
                       } else if (country.name === 'Japan') {
                         navigate('/japan');
+                      } else if (country.name === 'Malta') {
+                        navigate('/malta');
+                      } else if (country.name === 'UK') {
+                        navigate('/uk');
+                      } else if (country.name === 'Sweden') {
+                        navigate('/sweden');
+                      } else if (country.name === 'Finland') {
+                        navigate('/finland');
+                      } else if (country.name === 'Netherlands') {
+                        navigate('/netherlands');
+                      } else if (country.name === 'France') {
+                        navigate('/france');
                       }
                       // Handle other country clicks or a generic country page
                       // For now, we'll just navigate to a generic country page if it exists

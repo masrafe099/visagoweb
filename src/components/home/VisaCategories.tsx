@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { GraduationCap, Briefcase, Plane, ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const VisaCategories = () => {
+  const navigate = useNavigate();
   const categories = [
     {
       icon: GraduationCap,
@@ -101,6 +103,15 @@ const VisaCategories = () => {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  onClick={() => {
+                    if (category.title === 'Study Visa') {
+                      navigate('/study-visa');
+                    } else if (category.title === 'Work Permit Visa') {
+                      navigate('/work-visa');
+                    } else if (category.title === 'Tourist Visa') {
+                      navigate('/tourist-visa');
+                    }
+                  }}
                   className={`w-full ${colors.button} text-white py-3 px-6 rounded-full font-semibold flex items-center justify-center space-x-2 transition-colors`}
                 >
                   <span>{category.cta}</span>

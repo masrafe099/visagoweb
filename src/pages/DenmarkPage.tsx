@@ -1261,6 +1261,77 @@ const DenmarkPage: React.FC = () => {
           </div>
         </div>
       </section>
+{/* Why Choose Visago.World for Denmark */}
+<section className="py-20 bg-gradient-to-r from-red-600 to-pink-600 text-white relative overflow-hidden">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-bold mb-4 relative inline-block">
+        Why 95% Choose Visago.World for Denmark
+        <span className="absolute inset-0 flex items-center justify-center">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white/40 opacity-60"></span>
+          <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+        </span>
+      </h2>
+      <p className="text-xl text-white/90 max-w-3xl mx-auto mt-8">
+        End‑to‑end Denmark guidance—from shortlisting and scholarships to residence permit and arrival support.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {/* Proven Success */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.1 }}
+        whileHover={{ y: -5, boxShadow: '0 8px 15px rgba(0,0,0,0.2)' }}
+        className="bg-white/10 rounded-xl p-6 shadow-md border-t-4 border-yellow-400"
+      >
+        <Trophy className="h-12 w-12 text-yellow-300 mb-4" />
+        <h3 className="text-xl font-bold text-white mb-2">Proven Success</h3>
+        <ul className="text-red-50 space-y-1">
+          <li>High offer & visa approval rates</li>
+          <li>Scholarship guidance expertise</li>
+          <li>Partner network across Denmark</li>
+        </ul>
+      </motion.div>
+
+      {/* Comprehensive Support */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        whileHover={{ y: -5, boxShadow: '0 8px 15px rgba(0,0,0,0.2)' }}
+        className="bg-white/10 rounded-xl p-6 shadow-md border-t-4 border-green-400"
+      >
+        <ShieldCheck className="h-12 w-12 text-green-300 mb-4" />
+        <h3 className="text-xl font-bold text-white mb-2">Comprehensive Support</h3>
+        <ul className="text-red-50 space-y-1">
+          <li>Applications, SOP/LoR & scholarships</li>
+          <li>Residence permit file review (SIRI)</li>
+          <li>Pre‑departure & arrival assistance</li>
+        </ul>
+      </motion.div>
+
+      {/* Unique Advantages */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        whileHover={{ y: -5, boxShadow: '0 8px 15px rgba(0,0,0,0.2)' }}
+        className="bg-white/10 rounded-xl p-6 shadow-md border-t-4 border-pink-400"
+      >
+        <Award className="h-12 w-12 text-pink-300 mb-4" />
+        <h3 className="text-xl font-bold text-white mb-2">Unique Advantages</h3>
+        <ul className="text-red-50 space-y-1">
+          <li>Fast‑track processing & transparent fees</li>
+          <li>Timeline tracking & dedicated counselor</li>
+          <li>On‑ground alumni/community links</li>
+        </ul>
+      </motion.div>
+    </div>
+  </div>
+</section>
+
 {/* Final CTA Banner */}
       <section className="py-20 bg-gradient-to-r from-red-600 to-pink-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
