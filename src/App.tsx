@@ -23,6 +23,9 @@ import NetherlandsPage from './pages/NetherlandsPage';
 import FrancePage from './pages/FrancePage';
 import AustraliaPage from './pages/AustraliaPage';
 import CanadaPage from './pages/CanadaPage';
+
+import VisaBot from './components/chat/VisaBot';
+import visaKnowledge from './knowledge/visaKnowledge';
  
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -61,6 +64,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
+        <VisaBot knowledge={visaKnowledge} />
         <Footer />
       </div>
     </Router>
