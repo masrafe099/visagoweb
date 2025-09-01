@@ -56,10 +56,10 @@ const Testimonials = () => {
     <section className="py-20 bg-gradient-to-br from-blue-900 to-indigo-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Success Stories from Our Clients
           </h2>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto">
             Hear from thousands of satisfied clients who achieved their dreams with our help.
           </p>
         </div>
@@ -98,7 +98,7 @@ const Testimonials = () => {
                         <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                       ))}
                     </div>
-                    <h3 className="text-xl font-bold text-white">
+                    <h3 className="text-lg md:text-xl font-bold text-white">
                       {testimonials[currentTestimonial].name}
                     </h3>
                     <p className="text-blue-200">
@@ -136,9 +136,7 @@ const Testimonials = () => {
               <button
                 key={index}
                 onClick={() => setCurrentTestimonial(index)}
-                className={`w-3 h-3 rounded-full transition-colors ${
-                  index === currentTestimonial ? 'bg-white' : 'bg-white/30'
-                }`}
+                className={`w-3 h-3 rounded-full transition-colors ${ index === currentTestimonial ? 'bg-white' : 'bg-white/30'}`}
               />
             ))}
           </div>
@@ -147,19 +145,19 @@ const Testimonials = () => {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 text-center">
           <div>
-            <div className="text-3xl font-bold text-white mb-2">2000+</div>
+            <div className="text-2xl md:text-3xl font-bold text-white mb-2">2000+</div>
             <div className="text-blue-200">Happy Clients</div>
           </div>
           <div>
-            <div className="text-3xl font-bold text-white mb-2">95%</div>
+            <div className="text-2xl md:text-3xl font-bold text-white mb-2">95%</div>
             <div className="text-blue-200">Success Rate</div>
           </div>
           <div>
-            <div className="text-3xl font-bold text-white mb-2">50+</div>
+            <div className="text-2xl md:text-3xl font-bold text-white mb-2">50+</div>
             <div className="text-blue-200">Countries</div>
           </div>
           <div>
-            <div className="text-3xl font-bold text-white mb-2">4.9/5</div>
+            <div className="text-2xl md:text-3xl font-bold text-white mb-2">4.9/5</div>
             <div className="text-blue-200">Client Rating</div>
           </div>
         </div>

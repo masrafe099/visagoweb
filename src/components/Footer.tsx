@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Globe className="h-8 w-8 text-blue-400" />
-              <span className="text-2xl font-bold">Visago.world</span>
+              <span className="text-xl md:text-2xl font-bold">Visago.world</span>
             </div>
             <p className="text-gray-300 mb-4">
               Your trusted partner for visa processing services worldwide. 
@@ -32,7 +32,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-base md:text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
               <li><Link to="/study-visa" className="text-gray-300 hover:text-white transition-colors">Study Visa</Link></li>
@@ -45,7 +45,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <h3 className="text-base md:text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li className="text-gray-300">Visa Consultation</li>
               <li className="text-gray-300">Document Preparation</li>
@@ -58,7 +58,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Information</h3>
+            <h3 className="text-base md:text-lg font-semibold mb-4">Contact Information</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-blue-400" />

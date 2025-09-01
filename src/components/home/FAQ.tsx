@@ -50,11 +50,11 @@ const FAQ = () => {
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-4">
             <HelpCircle className="h-8 w-8 text-blue-600 mr-3" />
-            <h2 className="text-4xl font-bold text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
               Frequently Asked Questions
             </h2>
           </div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
             Get answers to the most common questions about our visa processing services.
           </p>
         </div>
@@ -72,7 +72,7 @@ const FAQ = () => {
                 onClick={() => toggleFAQ(index)}
                 className="w-full px-6 py-6 text-left flex items-center justify-between hover:bg-gray-100 transition-colors"
               >
-                <h3 className="text-lg font-semibold text-gray-900 pr-4">
+                <h3 className="text-base md:text-lg font-semibold text-gray-900 pr-4">
                   {faq.question}
                 </h3>
                 <div className="flex-shrink-0">
@@ -80,7 +80,7 @@ const FAQ = () => {
                     <Minus className="h-5 w-5 text-blue-600" />
                   ) : (
                     <Plus className="h-5 w-5 text-blue-600" />
-                  )}
+                  ) }
                 </div>
               </button>
               
@@ -113,7 +113,7 @@ const FAQ = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-base md:text-lg font-semibold transition-colors"
           >
             Schedule Free Consultation
           </motion.button>

@@ -204,7 +204,7 @@ const VisaBot: React.FC<VisaBotProps> = ({ knowledge }) => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed bottom-4 right-4 left-4 sm:left-auto sm:bottom-6 sm:right-6 z-50 w-full sm:w-96 max-w-none sm:max-w-[calc(100vw-2rem)] h-[calc(100vh-2rem)] sm:h-[42rem] max-h-[calc(100vh-2rem)] bg-white rounded-t-2xl sm:rounded-2xl shadow-2xl border border-gray-200 overflow-hidden"
+            className="fixed bottom-4 right-4 left-4 sm:left-auto sm:bottom-6 sm:right-6 z-50 sm:w-96 h-[calc(100vh-2rem)] sm:h-[42rem] max-h-[calc(100vh-2rem)] bg-white rounded-t-2xl sm:rounded-2xl shadow-2xl border border-gray-200 overflow-hidden"
             initial={{ opacity: 0, scale: 0.8, y: 100 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: 100 }}
@@ -230,7 +230,7 @@ const VisaBot: React.FC<VisaBotProps> = ({ knowledge }) => {
                     />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg sm:text-base">Visa Assistant</h3>
+                    <h3 className="font-semibold text-base truncate">Visa Assistant</h3>
                     <p className="text-xs text-white/80 flex items-center">
                       <Globe size={12} className="mr-1" />
                       Online • Ready to help

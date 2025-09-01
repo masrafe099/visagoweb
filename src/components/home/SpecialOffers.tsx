@@ -57,11 +57,11 @@ const SpecialOffers = () => {
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-4">
             <Gift className="h-8 w-8 text-orange-600 mr-3" />
-            <h2 className="text-4xl font-bold text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
               Special Offers & Programs
             </h2>
           </div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
             Take advantage of our exclusive offers and programs designed to make your visa journey more affordable and successful.
           </p>
         </div>
@@ -70,7 +70,7 @@ const SpecialOffers = () => {
         <div className="mb-16">
           <div className="flex items-center mb-8">
             <GraduationCap className="h-6 w-6 text-blue-600 mr-3" />
-            <h3 className="text-2xl font-bold text-gray-900">Study Visa Highlights</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-gray-900">Study Visa Highlights</h3>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -90,7 +90,7 @@ const SpecialOffers = () => {
                   </span>
                 </div>
                 
-                <h4 className="text-xl font-bold text-gray-900 mb-2">
+                <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-2">
                   {offer.title}
                 </h4>
                 <p className="text-gray-600 mb-4">
@@ -123,7 +123,7 @@ const SpecialOffers = () => {
         <div>
           <div className="flex items-center mb-8">
             <Briefcase className="h-6 w-6 text-green-600 mr-3" />
-            <h3 className="text-2xl font-bold text-gray-900">Work Visa Highlights</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-gray-900">Work Visa Highlights</h3>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -143,7 +143,7 @@ const SpecialOffers = () => {
                   </span>
                 </div>
                 
-                <h4 className="text-xl font-bold text-gray-900 mb-2">
+                <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-2">
                   {offer.title}
                 </h4>
                 <p className="text-gray-600 mb-4">
@@ -181,9 +181,9 @@ const SpecialOffers = () => {
         >
           <div className="flex items-center justify-center mb-4">
             <Clock className="h-8 w-8 mr-3" />
-            <h3 className="text-2xl font-bold">Limited Time Offers!</h3>
+            <h3 className="text-xl md:text-2xl font-bold">Limited Time Offers!</h3>
           </div>
-          <p className="text-lg mb-6">
+          <p className="text-base md:text-lg mb-6">
             These exclusive programs have limited seats. Book your free consultation today to secure your spot.
           </p>
           <motion.button

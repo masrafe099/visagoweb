@@ -20,7 +20,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <Globe className="h-8 w-8 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-800">Visago.world</span>
+            <span className="text-xl sm:text-2xl font-bold text-gray-800">Visago.world</span>
           </Link>
 
           {/* Desktop Navigation */}

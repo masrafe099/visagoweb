@@ -44,10 +44,10 @@ const ContactForm = () => {
     <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Get Your Free Consultation
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
             Ready to start your visa journey? Fill out the form below and our expert consultants will contact you within 24 hours.
           </p>
         </div>
@@ -180,7 +180,7 @@ const ContactForm = () => {
             className="space-y-8"
           >
             <div className="bg-white rounded-2xl shadow-xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6">
                 Contact Information
               </h3>
               
@@ -243,7 +243,7 @@ const ContactForm = () => {
 
             {/* Quick Response Promise */}
             <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-2xl p-8">
-              <h3 className="text-xl font-bold mb-4">Quick Response Guarantee</h3>
+              <h3 className="text-lg md:text-xl font-bold mb-4">Quick Response Guarantee</h3>
               <p className="mb-4">
                 We understand that timing is crucial for visa applications. That's why we guarantee:
               </p>

@@ -87,14 +87,14 @@ const WhyChooseUs = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Statistics */}
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
               className="text-center"
             >
-              <div className="text-5xl font-bold text-blue-600 mb-2">
+              <div className="text-4xl sm:text-5xl font-bold text-blue-600 mb-2">
                 {counters.approval}%
               </div>
               <div className="text-gray-600 font-medium">Visa Approval Rate</div>
@@ -106,7 +106,7 @@ const WhyChooseUs = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-center"
             >
-              <div className="text-5xl font-bold text-green-600 mb-2">
+              <div className="text-4xl sm:text-5xl font-bold text-green-600 mb-2">
                 {counters.experience}+
               </div>
               <div className="text-gray-600 font-medium">Years Experience</div>
@@ -118,7 +118,7 @@ const WhyChooseUs = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-center"
             >
-              <div className="text-5xl font-bold text-purple-600 mb-2">
+              <div className="text-4xl sm:text-5xl font-bold text-purple-600 mb-2">
                 {counters.countries}+
               </div>
               <div className="text-gray-600 font-medium">Countries Served</div>
@@ -130,7 +130,7 @@ const WhyChooseUs = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-center"
             >
-              <div className="text-5xl font-bold text-orange-600 mb-2">
+              <div className="text-4xl sm:text-5xl font-bold text-orange-600 mb-2">
                 {counters.clients}+
               </div>
               <div className="text-gray-600 font-medium">Happy Clients</div>

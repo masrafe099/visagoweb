@@ -81,7 +81,7 @@ const ImageSlider = () => {
                 initial={{ y: 30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.6 }}
-                className="text-lg text-gray-200"
+                className="text-base md:text-lg text-gray-200"
               >
                 {slides[currentSlide].description}
               </motion.p>
