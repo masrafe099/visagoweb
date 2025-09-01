@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, Send, X, Bot, User, Sparkles, Globe } from 'lucide-react';
-import { GoogleGenerativeAI } from '@google/generative-ai';
 import type { KnowledgeBase } from '../../knowledge/types';
 import ChatMessage from './ChatMessage';
 import TypingIndicator from './TypingIndicator';
@@ -30,9 +29,6 @@ const VisaBot: React.FC<VisaBotProps> = ({ knowledge }) => {
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const bubbleRef = useRef<HTMLDivElement>(null);
-
-  const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
-  const model = genAI.getGenerativeModel({ model: import.meta.env.VITE_GEMINI_MODEL });
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -129,9 +125,17 @@ const VisaBot: React.FC<VisaBotProps> = ({ knowledge }) => {
       
       const prompt = `${systemPrompt}\n\n${relevantKnowledge ? `RELEVANT KNOWLEDGE:${relevantKnowledge}` : ''}\n\nUser Question: ${text}\n\nPlease provide a helpful, accurate response based on the knowledge base and your role as a visa consultant. Be conversational, supportive, and include specific information when available.`;
 
-      const result = await model.generateContent(prompt);
-      const response = await result.response;
-      const botResponse = response.text();
+      const response = await fetch('/.netlify/functions/generate', {
+        method: 'POST',
+        body: JSON.stringify({ prompt }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to get response from server.');
+      }
+
+      const data = await response.json();
+      const botResponse = data.text;
 
       setTimeout(() => {
         const botMessage: Message = {
