@@ -192,25 +192,26 @@ const AboutPage = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, index) => (
-              <motion.div
-                key={value.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="text-center"
-              >
+            {values.map((value, index) => {
+              const Icon = value.icon;
+              return (
+                <motion.div
+                  key={value.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="text-center"
+                >
                   <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                     <Icon className="h-8 w-8 text-blue-600" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4">
                     {value.title}
                   </h3>
-                  <p className="text-gray-600">
-                    {value.description}
-                  </p>
+                  <p className="text-gray-600">{value.description}</p>
                 </motion.div>
-              ))}
+              );
+            })}
           </div>
         </div>
       </section>
